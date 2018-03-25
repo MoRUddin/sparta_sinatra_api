@@ -1,16 +1,16 @@
-require "json"
-require "httparty"
+require_relative "./services/search_by_track"
+require_relative "./services/search_by_lyrics"
 
 class ApiParser
-  attr_reader :json_file
-  include HTTParty
 
-  base_uri "https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?format=jsonp&callback=callback&q_track="
+  def search_by_track
+    SearchByTrack.new
+  end
 
-  def initialize(json_file)
-    @json_file = JSON.parse(self.class.get("#{json_file}&apikey=dc29c2ed3e5a6d07775fcb6338c355f5"))
+  def search_by_lyrics
+    SearchByLyrics.new
   end
 
 end
 
-p ApiParser.new("7th%20element").json_file
+p ApiParser.new.search_by_lyrics.query("White lips, pale face")
