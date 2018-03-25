@@ -8,7 +8,7 @@ class SearchByTrack
   base_uri "https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?format=json&q_track="
 
   def query(input_string)
-    @response = JSON.parse(self.class.get("#{input_string}&apikey=dc29c2ed3e5a6d07775fcb6338c355f5").body)
+    @response = JSON.parse(self.class.get("#{input_string.gsub(" ","%20")}&apikey=dc29c2ed3e5a6d07775fcb6338c355f5").body)
   end
 
   def message

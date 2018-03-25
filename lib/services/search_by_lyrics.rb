@@ -27,12 +27,23 @@ class SearchByLyrics
       message["body"]
     end
 
-    def lyrics_hash
-      body["lyrics"]
+    def track_list
+      body["track_list"]
     end
 
-    def search_lyrics_hash(key_word)
-      lyrics_hash["#{key_word}"]
+    def search_track_list(index)
+      track_list[index]
+    end
+
+    def main_data
+      arr = []
+      i = 0
+      track_list.each do |track|
+        arr[] << track["track"]
+        i+=1
+      end
+      p arr
+      arr
     end
 
 end
