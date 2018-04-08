@@ -24,12 +24,11 @@ class MainController < Sinatra::Base
     @search_by = params["search_by"]
     @search = params["search"]
     @title = "Landing"
-    #@response = SearchByLyrics.new.query(params)
     erb :'main/search_results'
   end
 
   get '/search_lyrics/*' do
-    @args = params
+    @search = params
     erb :'main/search_lyrics'
   end
 end

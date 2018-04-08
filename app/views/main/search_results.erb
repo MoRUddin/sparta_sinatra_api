@@ -1,11 +1,17 @@
 <% if @search_by == "Search by lyrics" %>
-<% result = ApiParser.new.search_by_lyrics %>
-<% result.query(@search) %>
-  <% result.track_list.each do |track| %>
-  <a href="/search_lyrics/<%= track['track']['track_name'] %>"> <h1><%= track["track"]["track_name"] %></h1> </a>
+  <% results = ApiParser.new.search_by_lyrics %>
+  <% results.query(@search) %>
+  <% results.track_list.each do |track| %>
+  <a href='/search_lyrics/<%= track["track"]["track_name"].gsub(/[^a-zA-Z0-9\s-]/, '') %>, <%= track["track"]["artist_name"].gsub(/[^a-zA-Z0-9\s-]/, '') %>'> <h1><%= track["track"]["track_name"] %>, <%= track["track"]["artist_name"] %></h1> </a>
   <% end %>
 <% elsif @search_by == "Search by track name" %>
-
-<% else %>
-
+  <h1><%= @search %></h1>
+  <% result = ApiParser.new.search_by_track %>
+  <% result.query(@search) %>
+  <h2>Lyrics</h2>
+  <article>
+    <% result.search_lyrics_hash("lyrics_body").split("\n").each do |line| %>
+      <p style="margin:0"><%= line %></p>
+    <% end %>
+  </article>
 <% end %>
