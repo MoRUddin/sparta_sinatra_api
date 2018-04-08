@@ -11,6 +11,15 @@ class MainController < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  $errors = {
+    "400": "The request had bad syntax or was inherently impossible to be satisfied.",
+    "401": "Authentication failed, probably because of a bad API key.",
+    "402": "A limit was reached, either you exceeded per hour requests limits or your balance is insufficient.",
+    "403": "You are not authorized to perform this operation or the api version you're trying to use has been shut down.",
+    "404": "Requested resource was not found.",
+    "405": "Requested method was not found."
+  }
+
   get '/' do
     @title = "Landing"
     erb :'main/landing'
@@ -24,11 +33,13 @@ class MainController < Sinatra::Base
     @search_by = params["search_by"]
     @search = params["search"]
     @title = "Landing"
+    @errors = $errors
     erb :'main/search_results'
   end
 
   get '/search_lyrics/*' do
     @search = params
+    @errors = $errors
     erb :'main/search_lyrics'
   end
 end

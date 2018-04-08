@@ -1,9 +1,15 @@
-<h1><%= @search["splat"].join %></h1>
 <% result = ApiParser.new.search_by_track %>
-<% result.query(@search["splat"].join) %>
-  <h2>Lyrics</h2>
-  <article>
-  <% result.search_lyrics_hash("lyrics_body").split("\n").each do |line| %>
-    <p style="margin:0"><%= line %></p>
-  <% end %>
-</article>
+<% if result.header["status_code"] == 200 %>
+  <h1><%= @search["splat"].join %></h1>
+  <% result.query(@search["splat"].join) %>
+    <h2>Lyrics</h2>
+    <article>
+    <% result.search_lyrics_hash("lyrics_body").split("\n").each do |line| %>
+      <p style="margin:0"><%= line %></p>
+    <% end %>
+  </article>
+<% else %>
+  <h1>Error: <%= result.header["status_code"] %></h1>
+  <p><%= @errors["#{result.header['status_code']}"] %></p>
+  <p>Please return <a onclick="history.back()">here</a> </p>
+<% end %>
