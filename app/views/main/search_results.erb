@@ -1,0 +1,11 @@
+<% if @search_by == "Search by lyrics" %>
+<% result = ApiParser.new.search_by_lyrics %>
+<% result.query(@search) %>
+  <% result.track_list.each do |track| %>
+  <a href="/search_lyrics/<%= track['track']['track_name'] %>"> <h1><%= track["track"]["track_name"] %></h1> </a>
+  <% end %>
+<% elsif @search_by == "Search by track name" %>
+
+<% else %>
+
+<% end %>

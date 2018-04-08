@@ -8,7 +8,7 @@ class SearchByLyrics
   base_uri "http://api.musixmatch.com/ws/1.1/track.search?q_lyrics="
 
   def query(input_string)
-    @response = JSON.parse(self.class.get("#{input_string.gsub(" ","%20")}&page_size=3&page=1&s_track_rating=desc&apikey=dc29c2ed3e5a6d07775fcb6338c355f5").body) #limits to 3 results, sorting by rating
+    @response = JSON.parse(self.class.get("#{input_string.gsub(" ","%20")}&page_size=10&page=1&s_track_rating=desc&apikey=dc29c2ed3e5a6d07775fcb6338c355f5").body) #limits to 10 results, sorting by rating
   end
 
     def message
@@ -33,17 +33,6 @@ class SearchByLyrics
 
     def search_track_list(index)
       track_list[index]
-    end
-
-    def main_data
-      arr = []
-      i = 0
-      track_list.each do |track|
-        arr[] << track["track"]
-        i+=1
-      end
-      p arr
-      arr
     end
 
 end

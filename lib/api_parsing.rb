@@ -12,5 +12,3 @@ class ApiParser
   end
 
 end
-
-#p ApiParser.new.search_by_lyrics.query("White lips, pale face")
