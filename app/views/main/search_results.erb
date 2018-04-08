@@ -3,8 +3,9 @@
   <% results.query(@search) %>
 
   <% if results.header["status_code"] == 200 %>
+  <p>Search time: <%= results.header["execute_time"] %> seconds</p>
     <% results.track_list.each do |track| %>
-      <a href='/search_lyrics/<%= track["track"]["track_name"].gsub(/[^a-zA-Z0-9\s-]/, '') %>, <%= track["track"]["artist_name"].gsub(/[^a-zA-Z0-9\s-]/, '') %>'> <h1><%= track["track"]["track_name"] %>, <%= track["track"]["artist_name"] %></h1> </a>
+      <a href='/search_lyrics/<%= track["track"]["track_name"].gsub(/[^a-zA-Z0-9\s-]/, '') %>, <%= track["track"]["artist_name"].gsub(/[^a-zA-Z0-9\s-]/, '') %>'> <h3><%= track["track"]["track_name"] %>, <%= track["track"]["artist_name"] %></h3> </a>
     <% end %>
   <% else %>
     <h1>Error: <%= results.header["status_code"] %></h1>
@@ -17,6 +18,7 @@
   <% result.query(@search) %>
 
   <% if result.header["status_code"] == 200 %>
+  <p>Search time: <%= result.header["execute_time"] %> seconds</p>
     <h1><%= @search %></h1>
     <h2>Lyrics</h2>
     <article>

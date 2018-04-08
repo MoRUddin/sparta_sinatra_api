@@ -47,6 +47,7 @@ PLATFORMS
 DEPENDENCIES
   httparty
   json
+  rack
   rspec
   sinatra
   sinatra-reloader
