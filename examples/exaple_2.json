@@ -1,0 +1,160 @@
+{
+  "message": {
+    "header": {
+      "status_code": 200,
+      "execute_time": 0.017886877059937,
+      "available": 221
+    },
+    "body": {
+      "track_list": [{
+        "track": {
+          "track_id": 73105697,
+          "track_mbid": "17eb8cd6-7bb0-4579-90af-dc38c1b3fc6a",
+          "track_isrc": "",
+          "track_spotify_id": "",
+          "track_soundcloud_id": "",
+          "track_xboxmusic_id": "",
+          "track_name": "The A Team",
+          "track_name_translation_list": [],
+          "track_rating": 80,
+          "track_length": 258,
+          "commontrack_id": 9844632,
+          "instrumental": 0,
+          "explicit": 0,
+          "has_lyrics": 1,
+          "has_lyrics_crowd": 0,
+          "has_subtitles": 1,
+          "has_richsync": 1,
+          "num_favourite": 22187,
+          "lyrics_id": 10260461,
+          "subtitle_id": 19254440,
+          "album_id": 19625308,
+          "album_name": "+",
+          "artist_id": 33111847,
+          "artist_mbid": "3bca1168-e7c6-4beb-9af9-db9dc674b1fa",
+          "artist_name": "Ed Sheeran",
+          "album_coverart_100x100": "http://s.mxmcdn.net/images-storage/albums/nocover.png",
+          "album_coverart_350x350": "",
+          "album_coverart_500x500": "",
+          "album_coverart_800x800": "",
+          "track_share_url": "https://www.musixmatch.com/lyrics/Ed-Sheeran/The-A-Team?utm_source=application&utm_campaign=api&utm_medium=Sparta+Global%3A1409617619847",
+          "track_edit_url": "https://www.musixmatch.com/lyrics/Ed-Sheeran/The-A-Team/edit?utm_source=application&utm_campaign=api&utm_medium=Sparta+Global%3A1409617619847",
+          "commontrack_vanity_id": "Ed-Sheeran/The-A-Team",
+          "restricted": 0,
+          "first_release_date": "2009-11-30T00:00:00Z",
+          "updated_time": "2017-04-28T13:19:10Z",
+          "primary_genres": {
+            "music_genre_list": [{
+              "music_genre": {
+                "music_genre_id": 10,
+                "music_genre_parent_id": 34,
+                "music_genre_name": "Singer/Songwriter",
+                "music_genre_name_extended": "Singer/Songwriter",
+                "music_genre_vanity": "Singer-Songwriter"
+              }
+            }]
+          },
+          "secondary_genres": {
+            "music_genre_list": []
+          }
+        }
+      }, {
+        "track": {
+          "track_id": 94622938,
+          "track_mbid": "",
+          "track_isrc": "",
+          "track_spotify_id": "",
+          "track_soundcloud_id": "",
+          "track_xboxmusic_id": "",
+          "track_name": "The A Team - Acoustic",
+          "track_name_translation_list": [],
+          "track_rating": 67,
+          "track_length": 241,
+          "commontrack_id": 12236654,
+          "instrumental": 0,
+          "explicit": 0,
+          "has_lyrics": 1,
+          "has_lyrics_crowd": 0,
+          "has_subtitles": 1,
+          "has_richsync": 1,
+          "num_favourite": 318,
+          "lyrics_id": 13490179,
+          "subtitle_id": 18872871,
+          "album_id": 15447434,
+          "album_name": "+",
+          "artist_id": 33111847,
+          "artist_mbid": "3bca1168-e7c6-4beb-9af9-db9dc674b1fa",
+          "artist_name": "Ed Sheeran",
+          "album_coverart_100x100": "http://s.mxmcdn.net/images-storage/albums/nocover.png",
+          "album_coverart_350x350": "",
+          "album_coverart_500x500": "",
+          "album_coverart_800x800": "",
+          "track_share_url": "https://www.musixmatch.com/lyrics/Ed-Sheeran/The-A-Team-acoustic?utm_source=application&utm_campaign=api&utm_medium=Sparta+Global%3A1409617619847",
+          "track_edit_url": "https://www.musixmatch.com/lyrics/Ed-Sheeran/The-A-Team-acoustic/edit?utm_source=application&utm_campaign=api&utm_medium=Sparta+Global%3A1409617619847",
+          "commontrack_vanity_id": "Ed-Sheeran/The-A-Team-acoustic",
+          "restricted": 0,
+          "first_release_date": "2009-11-30T00:00:00Z",
+          "updated_time": "2017-04-28T13:19:10Z",
+          "primary_genres": {
+            "music_genre_list": [{
+              "music_genre": {
+                "music_genre_id": 10,
+                "music_genre_parent_id": 34,
+                "music_genre_name": "Singer/Songwriter",
+                "music_genre_name_extended": "Singer/Songwriter",
+                "music_genre_vanity": "Singer-Songwriter"
+              }
+            }]
+          },
+          "secondary_genres": {
+            "music_genre_list": []
+          }
+        }
+      }, {
+        "track": {
+          "track_id": 44828480,
+          "track_mbid": "0bbf3fd9-790e-40c1-92f4-1dc0d45569cd",
+          "track_isrc": "",
+          "track_spotify_id": "",
+          "track_soundcloud_id": "",
+          "track_xboxmusic_id": "",
+          "track_name": "A Team",
+          "track_name_translation_list": [],
+          "track_rating": 63,
+          "track_length": 261,
+          "commontrack_id": 19426536,
+          "instrumental": 0,
+          "explicit": 0,
+          "has_lyrics": 1,
+          "has_lyrics_crowd": 0,
+          "has_subtitles": 1,
+          "has_richsync": 0,
+          "num_favourite": 643,
+          "lyrics_id": 15909350,
+          "subtitle_id": 17174165,
+          "album_id": 16219573,
+          "album_name": "Knuffelrock 2012 - Jubileum-Editie",
+          "artist_id": 33111847,
+          "artist_mbid": "3bca1168-e7c6-4beb-9af9-db9dc674b1fa",
+          "artist_name": "Ed Sheeran",
+          "album_coverart_100x100": "http://s.mxmcdn.net/images-storage/albums/nocover.png",
+          "album_coverart_350x350": "",
+          "album_coverart_500x500": "",
+          "album_coverart_800x800": "",
+          "track_share_url": "https://www.musixmatch.com/lyrics/Ed-Sheeran/A-Team?utm_source=application&utm_campaign=api&utm_medium=Sparta+Global%3A1409617619847",
+          "track_edit_url": "https://www.musixmatch.com/lyrics/Ed-Sheeran/A-Team/edit?utm_source=application&utm_campaign=api&utm_medium=Sparta+Global%3A1409617619847",
+          "commontrack_vanity_id": "Ed-Sheeran/A-Team",
+          "restricted": 0,
+          "first_release_date": "2012-05-07T00:00:00Z",
+          "updated_time": "2017-04-28T13:19:03Z",
+          "primary_genres": {
+            "music_genre_list": []
+          },
+          "secondary_genres": {
+            "music_genre_list": []
+          }
+        }
+      }]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<% result = ApiParser.new.search_by_track %>
+<% result.query(@search["splat"].join) %>
+
+<% if result.header["status_code"] == 200 %>
+  <h1><%= @search["splat"].join %></h1>
+    <p>Search time: <%= result.header["execute_time"] %> seconds</p>
+    <h2>Lyrics</h2>
+    <article>
+    <% result.search_lyrics_hash("lyrics_body").split("\n").each do |line| %>
+      <p style="margin:0"><%= line %></p>
+    <% end %>
+    </article>
+<% else %>
+  <h1>Error: <%= result.header["status_code"] %></h1>
+  <p>error <%= @errors["#{result.header['status_code']}"] %></p>
+  <p>Please return <a onclick="history.back()">here</a> </p>
+<% end %>
