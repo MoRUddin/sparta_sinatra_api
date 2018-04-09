@@ -36,8 +36,8 @@ describe "test environment" do
       expect(@response.search_header("status_code")).to be_an(Integer)
     end
 
-    it "should return no more than 3 tracks" do
-      expect(@response.track_list.length).to be <= 3
+    it "should return no more than 10 tracks" do
+      expect(@response.track_list.length).to be <= 10
     end
 
     it "should return expected track name" do
